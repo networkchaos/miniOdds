@@ -1,0 +1,17 @@
+[
+  "function buyShares(uint256 outcomeIndex, uint256 amountIn)",
+  "function sellShares(uint256 outcomeIndex, uint256 shares)",
+  "function calculateSharesOut(uint256 outcomeIndex, uint256 amountIn) view returns (uint256)",
+  "function calculateProceedsOut(uint256 outcomeIndex, uint256 shares) view returns (uint256)",
+  "function getOdds(uint256 outcomeIndex) view returns (uint256)",
+  "function getPoolInfo() view returns (string title, string description, uint256 outcomeCount, uint256 totalLiquidity, bool isResolved, uint256 winningOutcome)",
+  "function getOutcomeInfo(uint256 outcomeIndex) view returns (string label, uint256 liquidity, uint256 totalShares, uint256 odds)",
+  "function resolvePool(uint256 winningOutcome)",
+  "function claimWinnings()",
+  "function userShares(address user, uint256 outcomeIndex) view returns (uint256)",
+  "function outcomes(uint256) view returns (string label, uint256 liquidity, uint256 totalShares, bool resolved)",
+  "event PositionBought(address indexed user, uint256 indexed outcomeIndex, uint256 shares, uint256 cost)",
+  "event PositionSold(address indexed user, uint256 indexed outcomeIndex, uint256 shares, uint256 proceeds)",
+  "event PoolResolved(uint256 indexed winningOutcome)"
+]
+

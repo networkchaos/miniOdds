@@ -1,0 +1,11 @@
+[
+  "function createPoolProposal(string title, string description, uint256 minLiquidity, uint256 creatorTakeoutRate, uint256 platformFeeRate, uint256 resolutionDate, address oracle, string[] outcomes) returns (uint256)",
+  "function voteOnProposal(uint256 proposalId, bool support, uint256 stakeAmount)",
+  "function getProposalCount() view returns (uint256)",
+  "function getProposal(uint256 proposalId) view returns (address creator, string title, string description, uint256 yesVotes, uint256 noVotes, bool approved, bool rejected, address poolAddress)",
+  "function getUserVote(uint256 proposalId, address user) view returns (bool hasVoted, bool support, uint256 stake)",
+  "event PoolProposalCreated(uint256 indexed proposalId, address indexed creator, string title)",
+  "event VoteCast(uint256 indexed proposalId, address indexed voter, bool support, uint256 stake)",
+  "event PoolApproved(uint256 indexed proposalId, address indexed poolAddress)"
+]
+
